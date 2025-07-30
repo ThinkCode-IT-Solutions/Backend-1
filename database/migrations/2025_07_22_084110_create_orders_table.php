@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->string("user_id");
-            $table->string("product_id");
+            $table->string("_id");
+            $table->string("produseruct_id");
             $table->enum("status",["pending","approved","Delivered","Cancelled"]);
             $table->timestamps();
         });
